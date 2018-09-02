@@ -35,6 +35,12 @@ cd "$install_dir"
 rm -rf mods
 ln -s /mods "$PWD"/mods
 
+modoverrides="$dontstarve_dir/modoverrides"
+if [ -f "$modoverrides" ]; then
+    cp "$modoverrides" "$dontstarve_dir/$cluster_name/Master/
+    cp "$modoverrides" "$dontstarve_dir/$cluster_name/Caves/
+fi
+
 cd "$install_dir/bin/" || fail
 
 run_shared=(./dontstarve_dedicated_server_nullrenderer)
