@@ -4,7 +4,7 @@
 docker run -it \
            -v <\/path/to/your/dst/config/folder>:/data \
            -v <\/path/to/mods/folder>:/mods \
-           fredwanghuan:dst-server
+           fredwanghuan/dst-server
 
 Config folder should (at least) have these files:
 ```
